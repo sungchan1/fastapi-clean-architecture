@@ -11,10 +11,17 @@ class IUserRepository(metaclass=ABCMeta):
 
     @abstractmethod
     def find_by_email(self, email: str) -> User:
-        """
-        이메일로 유저를 검색한다
-        :param email:
-        :return:
-        """
         raise NotImplementedError
 
+    @abstractmethod
+    def find_by_id(self, id: str) -> User:
+        raise NotImplementedError
+
+
+    @abstractmethod
+    def update(self, user: User) -> User:
+        raise NotImplementedError
+
+    @abstractmethod
+    def get_users(self) -> list[User]:
+        raise NotImplementedError

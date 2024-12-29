@@ -1,4 +1,4 @@
-from sqlalchemy import String, DateTime
+from sqlalchemy import String, DateTime, Text
 from sqlalchemy.orm import Mapped
 from sqlalchemy.testing.schema import mapped_column
 
@@ -14,3 +14,4 @@ class User(Base):
     password: Mapped[str] = mapped_column(String(64), nullable=False)
     created_at: Mapped[str] = mapped_column(DateTime, nullable=False)
     updated_at: Mapped[str] = mapped_column(DateTime, nullable=False)
+    memo: Mapped[str] =mapped_column(Text, nullable=True)
