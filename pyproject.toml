@@ -17,6 +17,12 @@ sqlalchemy = "^2.0.36"
 mysqlclient = "^2.2.6"
 alembic = "^1.14.0"
 dependency-injector = "^4.44.0"
+bcrypt = "4.0.1"
+pydantic = {extras = ["email"], version = "^2.10.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.20"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.7.0"
 
 
 [build-system]
